@@ -1,0 +1,93 @@
+# HELP files
+HELP.md
+
+# Gradle
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### IDE Specific Exclusions
+
+.apt_generated  # STS
+.classpath      # STS
+.factorypath    # STS
+.project        # STS
+.settings       # STS
+.springBeans    # STS
+.sts4-cache     # STS
+bin/            # STS (exclude main and test source bins)
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+.idea           # IntelliJ IDEA
+*.iws           # IntelliJ IDEA
+*.iml           # IntelliJ IDEA (already excluded below)
+*.ipr           # IntelliJ IDEA
+out/            # IntelliJ IDEA (exclude main and test source output)
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+/nbproject/private/ # NetBeans
+/nbbuild/          # NetBeans
+/dist/             # NetBeans
+/nbdist/           # NetBeans
+/.nb-gradle/       # NetBeans
+
+.vscode/        # VS Code
+
+# Common Exclusions
+
+*.iml           # Already excluded from IntelliJ IDEA section
+.settings       # Common IDE settings
+target          # Common build output directory
+.project        # Common IDE project file
+.classpath      # Common IDE classpath file
+dist            # Common build output directory
+
+# Numerous always-ignore extensions
+*.bak
+*.patch
+*.diff
+*.err
+
+# Temporary files
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+*.sass-cache
+*.tmp.html
+*.dump
+
+# OS or Editor folders
+.DS_Store
+._*
+.cache
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+thumbs.db
+
+# Version Control Systems
+.idea          # Already excluded from IntelliJ IDEA section
+.hg
+.svn
+.CVS
+
+# Large folders to ignore
+node_modules/
+jscoverage_lib/
+
+# Application specific exclusions (modify as needed)
+src/main/webapp/WEB-INF/ftl/rsrc/
+src/main/webapp/rsrc/dist/
+src/main/resources/application-local.properties
+webpack-assets.json
